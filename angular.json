@@ -10,7 +10,7 @@
       "prefix": "next",
       "schematics": {
         "@schematics/angular:component": {
-          "styleext": "less"
+          "styleext": "scss"
         }
       },
       "architect": {
@@ -27,7 +27,7 @@
               "apps/dashboard/src/assets"
             ],
             "styles": [
-              "apps/dashboard/src/styles.less"
+              "apps/dashboard/src/styles.scss"
             ],
             "scripts": []
           },
@@ -83,7 +83,7 @@
             "tsConfig": "apps/dashboard/tsconfig.spec.json",
             "karmaConfig": "apps/dashboard/karma.conf.js",
             "styles": [
-              "apps/dashboard/src/styles.less"
+              "apps/dashboard/src/styles.scss"
             ],
             "scripts": [],
             "assets": [
