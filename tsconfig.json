@@ -7,12 +7,31 @@
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
     "target": "es5",
-    "typeRoots": ["node_modules/@types"],
-    "lib": ["es2017", "dom"],
+    "typeRoots": [
+      "node_modules/@types"
+    ],
+    "lib": [
+      "es2017",
+      "dom"
+    ],
     "baseUrl": ".",
     "paths": {
-      "@next/styles": ["libs/styles/src/index.ts"]
+      "@next/styles": [
+        "libs/styles/src/index.ts"
+      ],
+      "@next/ui": [
+        "libs/ui/src/index.ts"
+      ],
+      "@next/core": [
+        "libs/core/src/index.ts"
+      ],
+      "@next/forms": [
+        "libs/forms/src/index.ts"
+      ]
     }
   },
-  "exclude": ["node_modules", "tmp"]
+  "exclude": [
+    "node_modules",
+    "tmp"
+  ]
 }

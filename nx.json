@@ -16,6 +16,15 @@
     },
     "styles": {
       "tags": []
+    },
+    "ui": {
+      "tags": []
+    },
+    "core": {
+      "tags": []
+    },
+    "forms": {
+      "tags": []
     }
   }
 }

@@ -1,18 +1,26 @@
+import { NgModule } from '@angular/core';
+
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { NgModule } from '@angular/core';
+import { CoreModule } from '@next/core';
+
+import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { NxModule } from '@nrwl/nx';
-import { RouterModule } from '@angular/router';
+import { AppService } from './app.service';
 
 @NgModule({
   declarations: [AppComponent],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
-    NxModule.forRoot(),
-    RouterModule.forRoot([], { initialNavigation: 'enabled' })
+    CoreModule,
+    AppRoutingModule
   ],
+  providers: [AppService],
   bootstrap: [AppComponent]
 })
-export class AppModule {}
+export class AppModule {
+  constructor(app: AppService) {
+    app.init();
+  }
+}
